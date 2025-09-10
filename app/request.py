@@ -74,7 +74,8 @@ def send_tor_signal(signal: Signal) -> bool:
 
 def gen_user_agent(config, is_mobile) -> str:
     # Define the Lynx user agent
-    LYNX_UA = 'Lynx/2.9.2 libwww-FM/2.14 SSL-MM/1.4.1 OpenSSL/3.4.0'
+    #LYNX_UA = 'Lynx/2.9.2 libwww-FM/2.14 SSL-MM/1.4.1 OpenSSL/3.4.0'
+    LYNX_UA = 'Lynx/0.9.2 libwww-FM/2.14 SSL-MM/1.4.1 OpenSSL/3.4.0'
 
     # If using custom user agent, return the custom string
     if config.user_agent == 'custom' and config.custom_user_agent:
